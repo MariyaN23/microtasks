@@ -1,29 +1,24 @@
-import React, {MouseEvent} from 'react';
+import React from 'react';
 import './App.css';
-import {compileFunction} from 'vm';
+import {Button} from './components/Button';
 
 function App() {
- /* const ButtonEvent = (event:MouseEvent<HTMLButtonElement>) => {
-    console.log("Hello I'm Ivan")
-  }*/
 
-  const onClickHandler = (name:string) => {
-    console.log(name)
-  }
-
-  const foo1 = ()=> {
-    console.log(100200)
-  }
-
-  const foo2 = (num: number)=> {
-console.log(num)
-  }
+    const Button1Foo =(subsciber:string, age:number)=> {
+        console.log(subsciber, age)
+    }
+    const Button2Foo =(subsciber:string, age:number)=> {
+        console.log(subsciber, age)
+    }
+    const Button3Foo =()=>{
+        console.log('z negfz ryjgrf')
+    }
 
   return (
     <div className="App">
-      {/*<button onClick={()=>onClickHandler("Vasya")}>Button 1</button>*/}
-      <button onClick={foo1}>Button 1</button>
-      <button onClick={()=>foo2(100200)}>Button 2</button>
+      <Button name={'MyYoutubeChannel-1'} callBack={()=>Button1Foo("I'm Vasya", 21)}/>
+      <Button name={'MyYoutubeChannel-2'} callBack={()=>Button2Foo("I'm Ivan", 54)}/>
+        <Button name={'MyYoutubeChannel-3'} callBack={Button3Foo}></Button>
     </div>
   );
 }
