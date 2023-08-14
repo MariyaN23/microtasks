@@ -14,13 +14,13 @@ function App() {
         console.log('z negfz ryjgrf')
     }
 
-  return (
-    <div className="App">
-      <Button name={'MyYoutubeChannel-1'} callBack={()=>Button1Foo("I'm Vasya", 21)}/>
-      <Button name={'MyYoutubeChannel-2'} callBack={()=>Button2Foo("I'm Ivan", 54)}/>
-        <Button name={'MyYoutubeChannel-3'} callBack={Button3Foo}></Button>
-    </div>
-  );
+    return (
+        <div className="App">
+            <Button name={'MyYoutubeChannel-1'} callBack={()=>Button1Foo("I'm Vasya", 21)}/>
+            <Button name={'MyYoutubeChannel-2'} callBack={()=>Button2Foo("I'm Ivan", 54)}/>
+            <Button name={'MyYoutubeChannel-3'} callBack={Button3Foo}></Button>
+        </div>
+    );
 }
 
 export default App;
